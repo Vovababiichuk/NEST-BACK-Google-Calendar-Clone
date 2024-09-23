@@ -6,7 +6,7 @@ export declare class Event {
     dateTo: Date;
     description: string;
     tag: string;
-    done: boolean;
+    color: string;
 }
 export declare const EventSchema: import("mongoose").Schema<Event, import("mongoose").Model<Event, any, any, any, Document<unknown, any, Event> & Event & {
     _id: import("mongoose").Types.ObjectId;

@@ -15,29 +15,29 @@ let Event = class Event {
 };
 exports.Event = Event;
 __decorate([
-    (0, mongoose_1.Prop)(),
+    (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
 ], Event.prototype, "title", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ type: Date }),
+    (0, mongoose_1.Prop)({ type: Date, required: true }),
     __metadata("design:type", Date)
 ], Event.prototype, "dateFrom", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ type: Date }),
+    (0, mongoose_1.Prop)({ type: Date, required: true }),
     __metadata("design:type", Date)
 ], Event.prototype, "dateTo", void 0);
 __decorate([
-    (0, mongoose_1.Prop)(),
+    (0, mongoose_1.Prop)({ required: false }),
     __metadata("design:type", String)
 ], Event.prototype, "description", void 0);
 __decorate([
-    (0, mongoose_1.Prop)(),
+    (0, mongoose_1.Prop)({ required: false }),
     __metadata("design:type", String)
 ], Event.prototype, "tag", void 0);
 __decorate([
-    (0, mongoose_1.Prop)(),
-    __metadata("design:type", Boolean)
-], Event.prototype, "done", void 0);
+    (0, mongoose_1.Prop)({ required: false, default: '#c5bdf5' }),
+    __metadata("design:type", String)
+], Event.prototype, "color", void 0);
 exports.Event = Event = __decorate([
     (0, mongoose_1.Schema)()
 ], Event);
