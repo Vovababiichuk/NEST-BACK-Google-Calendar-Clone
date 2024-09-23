@@ -5,22 +5,22 @@ export type EventDocument = Event & Document;
 
 @Schema()
 export class Event {
-  @Prop()
+  @Prop({ required: true })
   title: string;
 
-  @Prop({ type: Date })
+  @Prop({ type: Date, required: true })
   dateFrom: Date;
 
-  @Prop({ type: Date })
+  @Prop({ type: Date, required: true })
   dateTo: Date;
 
-  @Prop()
+  @Prop({ required: false })
   description: string;
 
-  @Prop()
+  @Prop({ required: false })
   tag: string;
 
-  @Prop()
+  @Prop({ default: false })
   color: string;
 }
 
