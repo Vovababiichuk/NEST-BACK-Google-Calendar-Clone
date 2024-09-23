@@ -20,7 +20,7 @@ export class Event {
   @Prop({ required: false })
   tag: string;
 
-  @Prop({ default: false })
+  @Prop({ required: false })
   color: string;
 }
 
