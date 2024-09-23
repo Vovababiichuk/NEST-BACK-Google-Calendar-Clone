@@ -19,6 +19,7 @@ export class EventsService {
 
   async create(eventDto: CreateEventDto): Promise<Event> {
     const newEvent = new this.eventModel(eventDto);
+    console.log('BACKEND NewEvent', newEvent);
     return newEvent.save();
   }
 
