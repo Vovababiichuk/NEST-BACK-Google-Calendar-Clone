@@ -21,7 +21,7 @@ export class Event {
 	tag: string
 
 	@Prop()
-	done: boolean
+	color: string
 }
 
 export const EventSchema = SchemaFactory.createForClass(Event)
