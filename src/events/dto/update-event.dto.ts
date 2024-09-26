@@ -5,4 +5,5 @@ export class UpdateEventDto {
   readonly description: string;
   readonly tag: string;
   readonly color: string;
+  readonly done: boolean;
 }

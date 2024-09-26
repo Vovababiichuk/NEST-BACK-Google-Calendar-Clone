@@ -22,6 +22,9 @@ export class Event {
 
   @Prop({ required: false, default: '#c5bdf5' })
   color: string;
+
+  @Prop({ required: false, default: false })
+  done: boolean;
 }
 
 export const EventSchema = SchemaFactory.createForClass(Event);
